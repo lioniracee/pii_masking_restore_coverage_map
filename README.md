@@ -1,11 +1,11 @@
-# exptrack_jd294
+# pii_masking_restore_coverage_map
 
 **映射实验管理与追踪工程师·敏感信息的脱敏与回填的覆盖情况并找出未覆盖的部分。**
 
-`exptrack_jd294` —— 把候选项映射到类别上，算出实验管理与追踪工程师·敏感信息的脱敏与回填的覆盖率并列出未覆盖的类别
+`pii_masking_restore_coverage_map` —— 把候选项映射到类别上，算出实验管理与追踪工程师·敏感信息的脱敏与回填的覆盖率并列出未覆盖的类别
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`exptrack_jd294.py` 拷走就能用
+- 单文件，`pii_masking_restore_coverage_map.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install lioniracee-exptrack_jd294
+pip install lioniracee-pii_masking_restore_coverage_map
 ```
 
 装完直接用命令名调用：
 
 ```bash
-exptrack_jd294 --help
+pii_masking_restore_coverage_map --help
 ```
 
-也可以不用安装，直接把 `exptrack_jd294.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `pii_masking_restore_coverage_map.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ exptrack_jd294 --help
 ## 用法
 
 ```bash
-python exptrack_jd294.py --file input.txt
-python exptrack_jd294.py --text "示例内容"
-python exptrack_jd294.py --file input.txt --json
+python pii_masking_restore_coverage_map.py --file input.txt
+python pii_masking_restore_coverage_map.py --text "示例内容"
+python pii_masking_restore_coverage_map.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python exptrack_jd294.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_exptrack_jd294.py
+python test_pii_masking_restore_coverage_map.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_exptrack_jd294.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/lioniracee/exptrack_jd294>
+- GitHub 仓库：<https://github.com/lioniracee/pii_masking_restore_coverage_map>
 
 ---
 
@@ -79,7 +79,7 @@ python test_exptrack_jd294.py
 lioniracee 做实验管理与追踪工程师·敏感信息的脱敏与回填相关的问题，方向对标OpenAI的架构实验管理与追踪工程师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://lioniracee.github.io>
-- 仓库：<https://github.com/lioniracee/exptrack_jd294>
+- 仓库：<https://github.com/lioniracee/pii_masking_restore_coverage_map>
 
 ## 许可
 
